@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        *{
+            margin: 0px;
+        }
+        img{
+            max-width: 100%;
+        
+        }
+        .row{
+            background-color: rgb(124, 121, 121);
+            height: 100vh;
+            width: 15%;
+            position: fixed;
+     
+        }
+        .row ul li{
+            border:1px solid rgb(94, 88, 88);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color:rgb(134, 128, 128);
+        
+        }
+        .row ul{
+            padding: 0px;
+            text-align: center;
+            
+        }
+        .row ul li a{
+            text-decoration: none;
+            color: white;
+        }
+        .row ul li a:hover{
+            color: rgb(185, 245, 245);
+        }
+        .box{
+            margin-left: 15%;
+            width: 85%;
+
+
+        }
+     .section2{
+         width: 100%;
+            background-image: url("images/p1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding-bottom:20px;
+            margin-top: -16px;
+            
+           
+        }
+        .section2 .content{
+            color: white;
+           padding-top:70px;
+           padding-bottom: 50px;
+        margin: auto;
+           width: 50%;
+        }
+        button{
+            background-color: rgb(25, 173, 241);
+            padding-top: 5px;
+            padding-bottom: 5px;
+            color: white;
+        
+        }
+        .section3 p{
+            line-height: 30px;
+            font-size: 18px;
+        }
+        .content1{
+            padding-top:50px;
+            padding-bottom: 50px;
+        }
+        .content1 h2{
+            color:lightblue;
+        }
+        .border{
+            border-top: 5px solid rgb(236, 202, 49);
+        }
+        .section3{
+            width: 90%;
+            margin: auto;
+        }
+        .section3 .aboutus{
+            border: 2px solid rgb(236, 202, 49);
+            width:fit-content;
+            background-color:rgb(236, 202, 49);
+            padding:5px;
+            text-align: center;
+            margin-top: -4px;
+           color: white;
+        }
+        .images{
+            width: 100%;
+            display: grid;
+            grid-template-columns: 33.33333333% 33.33333333% 33.33333333%;
+            
+    
+        }
+        .image1,.image2,.image3{
+            margin: auto;
+
+        }
+       
+        .images h4{
+            color: rgb(236, 202, 49);;
+        }
+        .mgt{
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: 70% 30%;
+        }
+        .content2 h3{
+            color: rgb(236,202,49);
+        }
+        .border2{
+            border-top:5px solid rgb(165, 103, 165);  
+            
+        }
+       
+        .services{
+            background-color:rgb(165, 103, 165);  
+            color: white;
+            width: fit-content;
+            padding: 10px;
+            text-align: center;
+            margin-top: -4px;
+        }
+        .columns{
+            padding-top: 20px;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 33.3333333% 33.333333333% 33.333333333%;
+            padding-bottom: 20px;
+        }
+        .col1,.col2,.col3{
+            background-color:rgb(165, 103, 165);  
+            width:80%;   
+            color: white;
+            text-align: center;
+            display: grid;
+            grid-template-columns: 20% 80%;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 20px;
+    
+        }
+
+        .col1 i,.col2 i,.col3 i{
+            color: white;
+            
+        }
+        .ourskills{
+            padding-top: 50px;
+            display: grid;
+            grid-template-columns: 70% 30%;
+            padding-bottom: 50px;
+        }
+        .bd1{
+            width:100%;
+            display: grid;
+            grid-template-columns: 90% 10%;
+        }
+        .bd2{
+            width:100%;
+            display: grid;
+            grid-template-columns: 75% 25%;
+        }
+        .bd3{
+            width:100%;
+            display: grid;
+            grid-template-columns: 66% 34%;
+        }
+        .bd4{
+            width:100%;
+            display: grid;
+            grid-template-columns: 88% 12%;
+        }
+        .graphics,.html,.wordpress{
+            background-color: rgb(165, 103, 165);  
+            padding-top: 5px;
+            padding-bottom: 5px;
+            text-align: center;
+            color: white;
+        }
+        .blank{
+            background-color: rgb(212, 208, 208);
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .borderp{
+            border-top: 5px solid rgb(40, 185, 40);
+            padding-bottom: 50px;
+        }
+        .portfolio{
+           
+        background-color:rgb(40, 185, 40);
+      margin-top: -4px;
+        width: fit-content;
+        padding: 10px;
+        text-align: center;
+        color: white;
+        
+          
+    
+        }
+        .row1{
+            padding-bottom: 10px;
+        }
+        .rowp1
+        {
+            display: grid;
+            grid-template-columns: 33.333333% 33.33333333% 33.33333333%;
+            gap: 10px;
+           padding-bottom: 10px;
+        }
+        .btn1{
+            background-color: rgb(40, 185, 40);
+            width: 20%;
+            padding: 10px;
+            color: white;
+        }
+        .borderc{
+            border-top: 5px solid rgb(218, 60, 86);
+            padding-bottom: 50px;
+        }
+        .contact{
+            background-color:rgb(218, 60, 86); 
+            width:fit-content;
+            padding: 10px;
+            text-align: center;
+            color: white;
+        }
+      .map{
+          border: 1px solid grey;
+      }
+      iframe{
+          width: 100%;
+      }
+      input{
+          padding: 5px;
+          width: 90%;
+      }
+      .form{
+          display: grid;
+          grid-template-columns: 33.33333% 33.3333333% 33.333333333%;
+          padding-bottom: 20px;
+      }
+    .message{
+        padding-bottom: 20px;
+    }
+    footer{
+        background-color: gray;
+        padding-top: 40px;
+        padding-bottom: 30px;
+    }
+  
+    .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  
+}
+
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook,.fa-twitter,.fa-dribbble,.fa-linkedin,.fa-rss{
+  background:rgb(104, 99, 99);
+  color:white
+}
+.sociallinks{
+    text-align: center;
+    background-color: rgb(172, 169, 169);
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+}
+.copyright h3{
+    text-align: center;
+    padding-top: 10px;
+}
+.heading h4{
+    padding:10px;
+}
+textarea{
+    width: 100%;
+}
+
+@media only screen and (max-width:1015px)
+{
+.row{
+    height: 150vh;
+}
+.columns{
+    display: block;
+}
+.columns .col1,.columns .col2,.columns .col3{
+    margin-bottom: 2px;
+    width: 100%;
+}
+    .images{
+             gap: 5px; 
+    }
+.mgt{
+    grid-template-columns: 100%;
+}
+.sideimg{
+    text-align: center;
+}
+.ourskills{
+    grid-template-columns: 100%;
+}
+.skillscontent{
+    margin-bottom: 10px;
+}
+}
+
+@media only screen and (max-width:600px)
+{
+  .row1{
+      display: block;
+  }
+    .row{
+       position: relative;
+       width: 100%;
+       height: auto;
+       
+       
+   }
+   .box{
+       width: 100%;
+       margin-left: 0px;
+   }
+   .section2 .content{
+       width: 100%;
+   }
+   
+   .images{
+       display: block;
+       
+   }
+ 
+   .image1,.image2,.image3{
+       width: 100%;
+       text-align: center;
+       border: 1px solid rgb(170, 166, 166);
+       padding-top: 10px;
+       padding-bottom: 10px;
+   }
+   .mgt{
+       display: block;
+   }
+   .sideimg{
+       text-align: center;
+   }
+  
+.columns{
+    display: block;
+}
+.columns .col1,.columns .col2,.columns .col3{
+    margin-bottom: 2px;
+    width: 100%;
+}
+.ourskills{
+    display: block;
+}
+.skillscontent{
+    margin-bottom: 3px;
+}
+.rowp1{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+iframe{
+    width: 100%;
+}
+.form{
+    display: block;
+}
+
+}
+
+
+    </style>
+
+</head>
+<body>
+    <div class="fluid">
+        <div class="section1">
+            <div class="row1">
+                <div class="row">
+                    <img src="images/logistic_logo-removebg-preview.png">
+                    <ul style="list-style: none;">
+                        <li><a href="#home">HOME</a></li>
+                        <li><a href="#about">ABOUT US</a></li>
+                        <li><a href="#services">SERVICES</a></li>
+                        <li><a href="#portfolio">PORTFOLIO</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                        
+                    </ul>
+
+        </div>
+        </div>
+         </div>
+        <div class="box">
+            <div class="section2" id="home">
+                <div class="content">
+                <h1 style="text-align: center;">LOGISTIC EXPRESS</h1><br>
+                <p style="text-align: center;">PELLENTISQUE HABITANT TRISTIQUE SENECTUS ET NETUS ET MALESUADA FAMES SAMP ASIDE HOAHSJ TRIDTIQYW SENECTSU EYC NETUS</p>
+               <br>
+               <p style="text-align: center;"><button type="button">
+                   READ MORE
+
+               </button></p>
+                </div>
+            </div>
+        
+        <div class="section3">
+            <div class="content1">
+    <h2 style="text-align: center;">  WELCOME TO LOGISITIC EXPRESS</h2><br>
+       <p style="text-align: center;">Logistics refers to the overall process of managing how resources are acquired,stored,and transported to their final destination.The term is now used widely in the business sector,particularly by companies in the manufacturing sectors,to refer to how resources are handled and moved along the supply chain.</p>
+       </div>
+        
+        <div class="border">
+            <div class="aboutus" id="about">
+                <h3>ABOUT US</h3>
+                </div>
+                <br><br>
+                <div class="images">
+                    <div class="image1">
+                    <img src="images/ceo3.jpg">
+                    <h4 style="text-align: center;">CHRISTINA WE</h4>
+                    <p style="text-align: center;">Marketing director</p>
+                    </div>
+                    <div class="image2">
+                        <img src="images/ceo3.jpg">
+                        <h4 style="text-align: center;">TERI BELLIE</h4>
+                        <p style="text-align: center;">Creative Executive</p>
+                    </div>
+                    <div class="image3">
+                        <img src="images/ceo3.jpg">
+                        <h4 style="text-align: center;">TAWANA CHERRY</h4>
+                        <p style="text-align: center;">Company President</p>
+                    </div>
+
+
+                </div>
+
+
+
+            </div>
+            <div class="mgt">
+                <div class="content2">
+                <h3>OUR MANAGEMENT TEAM</h3><br>
+                <p>The MGT Group was established in 1978 in Dubai, U.A.E. with a mission to become the region’s leading supply house for seamless procurement services. MGT has established a number of target industries for its services including the global oil/gas industry, NGO’s world, militaries and international institutions such as well U.N. Red Crescent , etc..</p>
+                <p>The MGT Group was established in 1978 in Dubai, U.A.E. with a mission to become the region’s leading supply house for seamless procurement services. MGT has established a number of target industries for its services including the global oil/gas industry, NGO’s world, militaries and international institutions such as well U.N. Red Crescent , etc..</p>
+                </div>
+                <div class="sideimg">
+                    <img src="images/monitor-removebg-preview.png">
+                </div>
+            </div>
+          <br><br>
+           <div class="border2">
+                <div class="services" id="services">
+                    <h3>SERVICES</h3>
+
+              </div>
+              <div class="columns">
+                  <div class="col1">
+                      <div class="i">
+                    <i class="fa fa-bolt" aria-hidden="true"></i></div>
+                    <div class="heading">
+                      <h4>The Best Support Ever</h4>
+                      </div>
+                  </div>
+                  <div class="col2">
+                    <div class="i2">
+                        <i class="fa fa-laptop" aria-hidden="true"></i>
+                        </div>
+                        <div class="heading">
+                    <h4>Fully Responsive Design</h4>
+                    </div>
+                </div>
+                <div class="col3">
+                    <div class="i3">
+                        <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </div>
+                        <div class="heading">
+                    <h4>Unlimited Layout Option</h4>
+                    </div>
+                </div>
+                </div>
+                
+                <div class="ourskills">
+                    <div class="skillscontent">
+                        <h3 style="color:rgb(165, 103, 165); ">OUR SKILLS</h3><br>
+                        <p>When looking at the data collected on logisticians and supply chain managers, many important qualities begin to stand out. The Bureau of Labor Statistics (BLS) lists skills like a broad knowledge of logistics, IT and database experience, critical-thinking skills, and customer service abilities among the most important in supply chain careers.*
+
+                            But there’s a certain insider knowledge you only gain from hands-on experience in the field. That’s why we canvassed a panel of supply chain and logistics professionals to give us an in-depth look at the lesser-known skills required for success. Hear what they feel are the most important logistics skills to possess:</p>
+                    </div>
+                    <div class="range">
+                        <div class="bd1">
+                            <div class="graphics">
+                            <h6>GRAPHICS 90%</h6>
+                            </div>
+                            <div class="blank">
+                            </div>
+                        </div><br>
+                        <div class="bd2">
+                            <div class="html">
+                            <h6>HTML5 CSS3 75%</h6>
+                            </div>
+                            <div class="blank">
+                            </div>
+                        </div><br>
+                        <div class="bd3">
+                            <div class="wordpress">
+                            <h6>WORDPRESS 66%</h6>
+                            </div>
+                            <div class="blank">
+                            </div>
+                        </div><br>
+                        <div class="bd4">
+                            <div class="wordpress">
+                            <h6>MARKETING 88%</h6>
+                            </div>
+                            <div class="blank">
+                            </div>
+                        </div>
+                          </div>
+                </div>
+              
+
+          </div>
+              <div class="borderp">
+                <div class="portfolio" id="portfolio">
+                   <h3>PORTFOLIO</h3>
+               </div>
+               <br><br>
+               <div class="rowp1">
+                   <div class="p1">
+                       <img src="images/p1.jpg">
+                   </div>
+                   <div class="p2">
+                       <img src="images/pp1.jpg">
+                   </div>
+                   <div class="p3">
+                    <img src="images/port150.jpg">
+                </div>
+                   
+               
+                   <div class="p4">
+                       <img src="images/pp2.jpg">
+                   </div>
+                   <div class="p5">
+                       <img src="images/p1.jpg">
+                   </div>
+                   <div class="p6">
+                       <img src="images/pp1.jpg">
+                   </div>
+                 
+               </div>
+               <p style="text-align: center;"><button type="button" class="btn1">
+                LOAD MORE
+            </button></p>
+            </div>
+        <div class="borderc">
+         <div class="contact" id="contact">
+             <h3>CONTACT US</h3>
+         </div>
+         <br><br>
+         <div class="map">
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3635.383145459274!2d54.52173701369495!3d24.333142684305304!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5e38aae96454ab%3A0xbfd6c4379d8ea2f!2sDalma%20Mall!5e0!3m2!1sen!2sae!4v1638381591737!5m2!1sen!2sae" width="1140" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div><br><br>
+        <form>
+        <div class="form">
+            <div class="name">
+            <label>Name:<span style="color: red;">*</span> </label><br>
+    <input type="text" name="username" id="username" required></div>
+    <div class="email">
+        <label>Email: <span style="color: red;">*</span></label><br>
+       <input type="email" id="email" name="email" required>
+       
+        </div>
+        <div class="subject">
+        <label>Subject:<span style="color: red;">*</span></label><br>
+      <input type="text" id="Subject" name="subject" required>
+      </div>
+        </div>
+        <div class="message">
+            <label>Message:<span style="color: red;">*</span></label><br>
+            <textarea id="textarea" name="textarea" rows="10" cols="140"></textarea>
+        </div>
+        <button type="submit" style="background-color: palevioletred;">
+            SEND MESSAGE
+        </button>
+
+        </div>
+    </form>
+        <footer>
+    
+            <div class="sociallinks">
+                <a href="#" class="fa fa-facebook"></a>
+                 <a href="#" class="fa fa-twitter"></a>
+                 <a href="#" class="fa fa-dribbble"></a>
+                 <a href="#" class="fa fa-linkedin"></a>
+                 <a href="#" class="fa fa-rss"></a>
+                 
+            </div>
+            <div class="copyright">
+                <h3 style="color: rgb(214, 212, 212);">Copyright &copy; 2015 <span style="color: white;">Flomic</h3>
+            </div>
+        </footer>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
